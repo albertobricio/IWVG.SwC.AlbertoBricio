@@ -1,0 +1,16 @@
+language: java
+
+jdk:
+  - oraclejdk8
+  
+branches:
+  only:
+    - master
+    - develop
+    
+notifications:
+  email:
+    recipients:
+      - albertobricioortiz@gmail.com
+      
+script: mvn verify
