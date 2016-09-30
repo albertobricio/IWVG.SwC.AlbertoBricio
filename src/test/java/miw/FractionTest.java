@@ -33,5 +33,9 @@ public class FractionTest {
 	public void testisImpropiaFraction2() {
 		assertTrue(f2.getNumerator() > f2.getDenominator());
 	}
+	@Test
+    public void MultFractionTest(){
+		assertEquals (1,f2.MultFraction(3, 6));
+    }
 
 }

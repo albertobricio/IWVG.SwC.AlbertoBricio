@@ -61,4 +61,7 @@ public class Fraction {
         return denominator;
     }
     
+    public int MultFraction(int num , int den){
+    	return ((getNumerator()*num)/(getDenominator()*den));
+    }
 }
