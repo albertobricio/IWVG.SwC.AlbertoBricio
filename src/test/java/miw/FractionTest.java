@@ -5,6 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
+
 public class FractionTest {
 
 	private Fraction f1,f2;
@@ -37,5 +38,13 @@ public class FractionTest {
 	public void division() {
 		assertEquals(0.25 , f1.division(f2.getNumerator(), f2.getDenominator()),10e-5);
 	}
+	
+	@Test
+    public void testSubtraction() {
+        f1 = new Fraction(5,2);
+        Fraction resta = f1.subtraction(1, 2);
+        assertEquals(8, resta.getNumerator());
+        assertEquals(4, resta.getDenominator());     
+    }
 
 }
