@@ -71,4 +71,11 @@ public class Fraction {
     	return ((getNumerator()*num)/(getDenominator()*den));
     }
     
+    public Fraction subtraction(int numerador, int denominador){
+    	Fraction r = new Fraction((numerator * denominador) - 
+				(numerador * denominator),
+				(denominator * denominador));
+    	return r;
+    }
+    
 }
