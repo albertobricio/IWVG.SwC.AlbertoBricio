@@ -61,4 +61,8 @@ public class Fraction {
         return denominator;
     }
     
+    public int division(int num , int den){
+    	return ((getNumerator()*den)/(getDenominator()*num));
+    }
+    
 }
