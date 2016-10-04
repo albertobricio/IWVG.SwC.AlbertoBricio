@@ -31,5 +31,10 @@ public class UserTest {
 	public void testInicialesNombre() {
 		assertEquals("A.", usr.initials());
 	}
+	
+	@Test
+	 public void upperNameTest() {
+		assertEquals("ALBERTO",usr.upperName());
+    }
 
 }

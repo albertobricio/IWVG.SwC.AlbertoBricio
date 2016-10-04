@@ -26,14 +26,6 @@ public class DecimalCollection {
         }
         return sum;
     }
-    
-    public double multiply (){
-        double prod=0;
-        for (double item: this.collection){
-            prod *= item;
-        }
-        return prod;
-    }
 
     public double higher() {
         double higher = Double.NEGATIVE_INFINITY;
@@ -44,4 +36,5 @@ public class DecimalCollection {
         }
         return higher;
     }
+
 }
