@@ -33,5 +33,9 @@ public class FractionTest {
 	public void testisImpropiaFraction2() {
 		assertTrue(f2.getNumerator() > f2.getDenominator());
 	}
+	@Test
+	public void division() {
+		assertEquals(0.25 , f1.division(f2.getNumerator(), f2.getDenominator()),10e-5);
+	}
 
 }
