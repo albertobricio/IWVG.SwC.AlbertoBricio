@@ -61,8 +61,8 @@ public class Fraction {
         return denominator;
     }
     
-    public int division(int num , int den){
-    	return ((getNumerator()*den)/(getDenominator()*num));
+    public double division(int num , int den){
+    	return ((double)(getNumerator()*den)/(getDenominator()*num));
     }
     public boolean isProper(){
         return getNumerator() < getDenominator();
