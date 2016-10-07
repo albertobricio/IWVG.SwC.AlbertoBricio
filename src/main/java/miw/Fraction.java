@@ -61,4 +61,21 @@ public class Fraction {
         return denominator;
     }
     
+    public double division(int num , int den){
+    	return ((double)(getNumerator()*den)/(getDenominator()*num));
+    }
+    public boolean isProper(){
+        return getNumerator() < getDenominator();
+    }
+    public int MultFraction(int num , int den){
+    	return ((getNumerator()*num)/(getDenominator()*den));
+    }
+    
+    public Fraction subtraction(int numerador, int denominador){
+    	Fraction r = new Fraction((numerator * denominador) - 
+				(numerador * denominator),
+				(denominator * denominador));
+    	return r;
+    }
+    
 }
